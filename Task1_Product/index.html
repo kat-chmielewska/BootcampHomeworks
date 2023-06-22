@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------------------------------------- 
+      Import Fav Icon
+    -------------------------------------------------- -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <!-- -------------------------------------------------- 
+      #Import CSS Style 
+    -------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- --------------------------------------------------
+      #Import Fonts
+   -------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+    <!-- --------------------------------------------------
+      #Title website
+   -------------------------------------------------- -->
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <!-- --------------------------------------------------
+      #Body
+   -------------------------------------------------- -->
+  <body>
+    <main>
+      <div class="container">
+        <!-- -------------------- #Image -------------------- -->
+        <img class="container__image" src="images/image-product-desktop.jpg" />
+
+        <img class="container__image__mobile" src="images/image-product-mobile.jpg" />
+
+        <!-- --------------- #Content Contener --------------- -->
+        <div class="container__content">
+          <p id="container__content__heading">Perfume</p>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+          <p>
+            <span class="container__content__price-promotion">$149.99</span>
+            <s>$169.99</s>
+          </p>
+          <button class="container__content_button"><img class="container__content__button-img" src="images/icon-cart.svg" />Add to Cart</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/infoshareacademy/jfdzr9-student-kat-chmielewska">Katarzyna Chmielewska</a>.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------------------------------------------- 
+      #Import Fav Icon
+    -------------------------------------------------- -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <!-- -------------------------------------------------- 
+      #Import CSS Style 
+    -------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- --------------------------------------------------
+      #Import Fonts
+   -------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+    <title>Frontend Mentor | Social media dashboard</title>
+  </head>
+  <!-- --------------------------------------------------
+      #Body
+   -------------------------------------------------- -->
+  <body>
+    <div class="container">
+      <!-- ----------- #Header ----------- -->
+      <header class="container__header">
+        <div class="container__header__title">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <hr />
+        <div class="container__header__toggle">
+          <p>Dark Mode</p>
+          <label>
+            <input type="checkbox" />
+            <span class="container__header__slider"></span>
+          </label>
+        </div>
+      </header>
+
+      <!-- ----------- #Main ----------- -->
+      <main>
+        <!-- ----------- #Section Dashboard ----------- -->
+        <section class="container__dashboard">
+          <div class="container__dashboard__cards container__dashboard__cards--facebook">
+            <span class="container__dashboard__img">
+              <img src="images/icon-facebook.svg" />
+              <p>@nathanf</p>
+            </span>
+            <p class="container__dashboard__main-numbers">1987</p>
+            <p class="container__dashboard__subtitle">Followers</p>
+            <div class="container__grow">
+              <div class="container__triangle-grow"></div>
+              <p>12 Today</p>
+            </div>
+          </div>
+          <div class="container__dashboard__cards container__dashboard__cards--twitter">
+            <span class="container__dashboard__img">
+              <img src="images/icon-twitter.svg" />
+              <p>@nathanf</p>
+            </span>
+            <p class="container__dashboard__main-numbers">1044</p>
+            <p class="container__dashboard__subtitle">Followers</p>
+            <div class="container__grow">
+              <div class="container__triangle-grow"></div>
+              <p>99 Today</p>
+            </div>
+          </div>
+          <div class="container__dashboard__cards container__dashboard__cards--instagram">
+            <span class="container__dashboard__img">
+              <img src="images/icon-instagram.svg" />
+              <p>@realnathanf</p>
+            </span>
+            <p class="container__dashboard__main-numbers">11k</p>
+            <p class="container__dashboard__subtitle">Followers</p>
+            <div class="container__grow">
+              <div class="container__triangle-grow"></div>
+              <p>1099 Today</p>
+            </div>
+          </div>
+          <div class="container__dashboard__cards container__dashboard__cards--youtube">
+            <span class="container__dashboard__img">
+              <img src="images/icon-youtube.svg" />
+              <p>Nathan F.</p>
+            </span>
+            <p class="container__dashboard__main-numbers">8239</p>
+            <p class="container__dashboard__subtitle">Subscribers</p>
+            <div class="container__fall">
+              <div class="container__triangle-fall"></div>
+              <p>144 Today</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ----------- #Section Overview ----------- -->
+        <section class="container__overview">
+          <h2>Overview - Today Page</h2>
+          <div class="container__overview__social">
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Page Views</p>
+              <img class="container__align--right" src="images/icon-facebook.svg" />
+              <p class="container__overview__main-numbers">87</p>
+              <div class="container__grow container__align--right">
+                <div class="container__triangle-grow"></div>
+                <p>3%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Likes</p>
+              <img class="container__align--right" src="images/icon-facebook.svg" />
+              <p class="container__overview__main-numbers">52</p>
+              <div class="container__fall container__align--right">
+                <div class="container__triangle-fall"></div>
+                <p>2%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Likes</p>
+              <img class="container__align--right" src="images/icon-instagram.svg" />
+              <p class="container__overview__main-numbers">5462</p>
+              <div class="container__grow container__align--right">
+                <div class="container__triangle-grow"></div>
+                <p>2257%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Profile Views</p>
+              <img class="container__align--right" src="images/icon-instagram.svg" />
+              <p class="container__overview__main-numbers">52k</p>
+              <div class="container__grow container__align--right">
+                <div class="container__triangle-grow"></div>
+                <p>1375%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Retweets</p>
+              <img class="container__align--right" src="images/icon-twitter.svg" />
+              <p class="container__overview__main-numbers">117</p>
+              <div class="container__grow container__align--right">
+                <div class="container__triangle-grow"></div>
+                <p>303%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Likes</p>
+              <img class="container__align--right" src="images/icon-twitter.svg" />
+              <p class="container__overview__main-numbers">507</p>
+              <div class="container__grow container__align--right">
+                <div class="container__triangle-grow"></div>
+                <p>553%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Likes</p>
+              <img class="container__align--right" src="images/icon-youtube.svg" />
+              <p class="container__overview__main-numbers">107</p>
+              <div class="container__fall container__align--right">
+                <div class="container__triangle-fall"></div>
+                <p>19%</p>
+              </div>
+            </div>
+            <div class="container__overview__cards container__overview-grid">
+              <p class="container__overview__title">Total Views</p>
+              <img class="container__align--right" src="images/icon-youtube.svg" />
+              <p class="container__overview__main-numbers">1407</p>
+              <div class="container__fall container__align--right">
+                <div class="container__triangle-fall"></div>
+                <p>12%</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- ----------- #Footer ----------- -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+
+    <!-- --------------------------------------------------
+      #Script
+   -------------------------------------------------- -->
+    <script src="./script.js"></script>
+  </body>
+</html>

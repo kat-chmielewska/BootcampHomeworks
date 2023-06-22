@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------------------------------------------- 
+      #Import CSS Style 
+    -------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- --------------------------------------------------
+      #Import Fonts
+   -------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
+
+    <!-- --------------------------------------------------
+      #Title website
+   -------------------------------------------------- -->
+    <title>Task #6 - Tip calculator app</title>
+  </head>
+
+  <!-- --------------------------------------------------
+      #Body
+   -------------------------------------------------- -->
+  <body>
+    <main>
+      <div class="container">
+        <selection class="container__calculator">
+          <label>Bill</label>
+          <input type="number" id="numberTip" class="container__calculator--input calculator__bill--input" placeholder="0" />
+          <label>Select Tip %</label>
+          <div class="container__calculator--buttons">
+            <div class="calculator__button container__tips">5%</div>
+            <div class="calculator__button container__tips">10%</div>
+            <div class="calculator__button container__tips">15%</div>
+            <div class="calculator__button container__tips">25%</div>
+            <div class="calculator__button container__tips">50%</div>
+            <input type="number" id="tip-custom" class="calculator__input--custom-button" placeholder="Custom" />
+          </div>
+          <div class="container__calculator-label">
+            <label>Number of People</label>
+            <label class="container__paragraph-error">Can't be zero</label>
+          </div>
+          <input type="number" id="numberPeople" class="container__calculator--input calculator__people--input" placeholder="0" />
+        </selection>
+        <selection class="container__sum">
+          <div class="total-number-container">
+            <div>
+              <label class="container__sum__title">Tip Amount</label>
+              <p>/ person</p>
+            </div>
+            <p id="current-tip-sum" class="container__sum__number-paragraph">0</p>
+            <div>
+              <label class="container__sum__title">Total</label>
+              <p>/ person</p>
+            </div>
+            <p id="current-total-sum" class="container__sum__number-paragraph">0</p>
+          </div>
+          <button id="reset" class="container__sum--button">reset</button>
+        </selection>
+      </div>
+    </main>
+
+    <!-- --------------------------------------------------
+      #Script
+   -------------------------------------------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>

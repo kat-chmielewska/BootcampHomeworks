@@ -1,0 +1,209 @@
+/* ------------------------------
+    #Defining styles
+------------------------------ */
+:root {
+  /* ------------ Colors ----------- */
+  --Primary-green: #3d8168;
+  --Primary-dark-green: #1a4b39;
+  --Primary-cream: #f3eae3;
+  --Neutral-very-dark-blue: #1c232b;
+  --Neutral-dark-grayish-blue: #6c7289;
+  --Neutral-white: #fff;
+  /* ------------ Fonts Size ----------- */
+  --P-font-size: 14px;
+  --H1-font-size: 32px;
+  --Heading-font-size: 11px;
+  --Main-price-font-size: 24px;
+  --Secoundary-price-font-size: 14px;
+  --Button-font-size: 14px;
+  /* ------------ Fonts Familly ----------- */
+  --Fraunces-font-family: "Fraunces", serif;
+  --Montserrat-font-family: "Montserrat", sans-serif;
+}
+
+/* ------------------------------
+    #General
+------------------------------ */
+body {
+  max-width: 1920px;
+  background-color: var(--Primary-cream);
+}
+
+/* ------------------------------
+    #Container
+------------------------------ */
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  margin: 0px auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------
+    #Content Container
+------------------------------ */
+
+.container__content {
+  max-width: 240px;
+  height: 370px;
+  background-color: var(--Neutral-white);
+  padding: 40px;
+  padding-right: 48px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.container__content h1 {
+  font-family: var(--Fraunces-font-family);
+  font-size: var(--H1-font-size);
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.container__content p {
+  color: var(--Neutral-dark-grayish-blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--P-font-size);
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 24px;
+}
+
+#container__content__heading {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: var(--Heading-font-size);
+  padding-bottom: 16px;
+}
+
+.container__content__price-promotion {
+  font-family: var(--Fraunces-font-family);
+  font-size: var(--Main-price-font-size);
+  font-weight: 700;
+  color: var(--Primary-green);
+  padding-right: 16px;
+}
+
+/* ------------------------------
+    #Button
+------------------------------ */
+.container__content_button {
+  width: 240px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Primary-green);
+  color: var(--Neutral-white);
+  font-weight: 700;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  /* ----- Transitions ----- */
+  transition: all;
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+}
+
+/* ------------ #Hover ----------- */
+
+.container__content_button:hover {
+  transform: scale(1.05);
+  background-color: var(--Primary-dark-green);
+}
+
+.container__content__button-img {
+  width: 15px;
+}
+/* ------------------------------
+    #Image
+------------------------------ */
+.container__image {
+  max-width: 300px;
+  height: 450px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.container__image__mobile {
+  display: none;
+}
+
+/* ------------------------------
+    #Footer
+------------------------------ */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 14px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: var(--Primary-green);
+}
+
+/* ------------------------------
+    #Mobile
+------------------------------ */
+
+/* ------------ 620px ----------- */
+@media all and (max-width: 620px) {
+  /* --- #Image Desktop & Mobile --- */
+  .container__image {
+    display: none;
+  }
+
+  .container__image__mobile {
+    max-width: 312px;
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+  }
+  /* --- #Container Mobile --- */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__content {
+    max-width: 263px;
+    max-height: 340px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    padding-right: 28px;
+  }
+
+  .container__content h1 {
+    padding-bottom: 32px;
+  }
+
+  .container__content p {
+    padding-bottom: 16px;
+  }
+
+  #container__content__heading {
+    padding-bottom: 8px;
+  }
+
+  /* --- #Button Mobile --- */
+  .container__content_button {
+    width: 270px;
+    height: 50px;
+  }
+
+  .container__content_button {
+    /* ----- Transitions ----- */
+    transition: none;
+  }
+  .container__content_button:hover {
+    /* ----- Transitions ----- */
+    transition: none;
+  }
+}

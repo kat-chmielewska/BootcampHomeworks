@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------------------------------------- 
+      Import Fav Icon
+    -------------------------------------------------- -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <!-- -------------------------------------------------- 
+      #Import CSS Style 
+    -------------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- --------------------------------------------------
+      #Import Fonts
+   -------------------------------------------------- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- --------------------------------------------------
+      #Title website
+   -------------------------------------------------- -->
+    <title>Frontend Mentor | Toggle</title>
+  </head>
+  <!-- --------------------------------------------------
+      #Body
+   -------------------------------------------------- -->
+  <body>
+    <main>
+      <div class="container">
+        <div class="container__header">
+          <h1>Our Pricing</h1>
+          <div class="container__header__toggle">
+            <p>Annually</p>
+            <label>
+              <input type="checkbox" />
+              <span class="container__header__slider"></span>
+            </label>
+            <p>Monthly</p>
+          </div>
+        </div>
+        <!-- ----------- #Price ----------- -->
+        <div class="container__price">
+          <div class="container__price--basic">
+            <h2>Basic</h2>
+            <p id="container__price__monthly">$ 19.99</p>
+            <hr class="container__price__line" />
+            <p>500 GB storage</p>
+            <hr class="container__price__line" />
+            <p>2 Users allowed</p>
+            <hr class="container__price__line" />
+            <p>Send up to 3 GB</p>
+            <hr class="container__price__line" />
+            <button class="container__price--basic__button">Learn more</button>
+          </div>
+          <div class="container__price--professional">
+            <h2>Professional</h2>
+            <p id="container__price__monthly--professional">$ 24.99</p>
+            <hr class="container__price__line--professional" />
+            <p>1 TR storage</p>
+            <hr class="container__price__line--professional" />
+            <p>5 Users allowed</p>
+            <hr class="container__price__line--professional" />
+            <p>Send up to 10 GB</p>
+            <hr class="container__price__line--professional" />
+            <button class="container__price--professional__button">Learn more</button>
+          </div>
+          <div class="container__price--master">
+            <h2>Master</h2>
+            <p id="container__price__monthly">$ 39.99</p>
+            <hr class="container__price__line" />
+            <p>2 TR storage</p>
+            <hr class="container__price__line" />
+            <p>10 Users allowed</p>
+            <hr class="container__price__line" />
+            <p>Send up to 20 GB</p>
+            <hr class="container__line" />
+            <button class="container__price--master__button">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ----------- #Footer ----------- -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/kat-chmielewska">Katarzyna Chmielewska</a>.
+      </div>
+    </footer>
+  </body>
+</html>
